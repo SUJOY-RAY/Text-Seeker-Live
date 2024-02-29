@@ -1,4 +1,4 @@
-# Text Detection and Google Search
+# Text-Seeker-Live
 
 This Python script captures video frames from a camera, performs Optical Character Recognition (OCR) using Tesseract, and displays the processed frames with bounding boxes around detected text. Additionally, it extracts the recognized text, cleans it, and performs a Google search using the cleaned text.
 
@@ -33,7 +33,7 @@ This Python script captures video frames from a camera, performs Optical Charact
 2. Run the script:
 
    ```
-   python text_detection_and_search.py
+   python Text-Seeker-Live.py
    ```
 
 3. The script will open a video capture window displaying processed frames with text and bounding boxes.
