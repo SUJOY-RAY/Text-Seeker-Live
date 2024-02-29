@@ -1,4 +1,3 @@
-```markdown
 # Text Detection and Google Search
 
 This Python script captures video frames from a camera, performs Optical Character Recognition (OCR) using Tesseract, and displays the processed frames with bounding boxes around detected text. Additionally, it extracts the recognized text, cleans it, and performs a Google search using the cleaned text.
@@ -17,7 +16,7 @@ This Python script captures video frames from a camera, performs Optical Charact
 1. Install Python from [python.org](https://www.python.org/).
 2. Install required Python packages using the following command:
 
-   ```bash
+   ```
    pip install opencv-python pytesseract numpy Pillow
    ```
 
@@ -33,16 +32,14 @@ This Python script captures video frames from a camera, performs Optical Charact
 
 2. Run the script:
 
-   ```bash
+   ```
    python text_detection_and_search.py
    ```
 
 3. The script will open a video capture window displaying processed frames with text and bounding boxes.
-4. Press 'q' to exit the application.
+4. Press 'q' to exit the application and start the web search.
 
 ## Notes
 
 - The script assumes the presence of a camera. It uses camera 1 by default and falls back to camera 0 if camera 1 is not available.
 - The Google search is performed using the cleaned text extracted from the frames.
-
-```
