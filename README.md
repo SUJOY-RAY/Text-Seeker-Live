@@ -1,5 +1,3 @@
-Certainly! Here's a simple README file for the provided code:
-
 ```markdown
 # Text Detection and Google Search
 
@@ -29,14 +27,18 @@ This Python script captures video frames from a camera, performs Optical Charact
 
 1. Set the path to the Tesseract executable in the code:
 
+   ```python
    pytesseract.pytesseract.tesseract_cmd = 'path_to_tesseract_exe'
+   ```
 
 2. Run the script:
 
+   ```bash
    python text_detection_and_search.py
+   ```
 
 3. The script will open a video capture window displaying processed frames with text and bounding boxes.
-4. Press 'q' to exit the application and start the web search in your default browser.
+4. Press 'q' to exit the application.
 
 ## Notes
 
@@ -44,5 +46,3 @@ This Python script captures video frames from a camera, performs Optical Charact
 - The Google search is performed using the cleaned text extracted from the frames.
 
 ```
-
-This README file provides information about the purpose of the script, prerequisites, installation steps, usage instructions, and additional notes for customization.
