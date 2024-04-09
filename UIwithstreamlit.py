@@ -5,9 +5,13 @@ import webbrowser
 from PIL import Image
 
 def extract_Text(image):
-    myText = pytesseract.image_to_string(image)
-    st.write("Extracted Text:", myText)
-
+    try:
+        myText = pytesseract.image_to_string(image)
+        return myText
+    except Exception as e:
+        st.error(f"Exxor in text Extraction{e}")
+        return None
+    
 def perform_search(myText):
     if myText:
         search_url = f"https://www.google.com/search?q={myText}"
@@ -26,4 +30,11 @@ if uploaded_file is not None:
     button_clicked1 = st.button("Extract Text ")
     button_clicked2 = st.button("Search")
     if button_clicked1:
-        perform_search(image)
+        extracted_text=extract_Text(image)
+        if extracted_text:
+            st.write("Extracted text: ",extracted_text)
+    if button_clicked2:
+        extracted_text=extract_Text(image)
+        if extracted_text:
+            perform_search(extracted_text)
+    
